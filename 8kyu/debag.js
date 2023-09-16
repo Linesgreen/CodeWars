@@ -15,7 +15,7 @@
 //   }
 
 function checkAlive(health) {
-    return health>0;                    // на кодварсе ноль считается тоже отрицательным числом, что странно. Я бы исп. >=
-  }
+  return health > 0;
+}
 
-console.log( checkAlive(9))
+console.log(checkAlive(9));
