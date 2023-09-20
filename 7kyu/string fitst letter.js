@@ -7,14 +7,12 @@ For example:
 Strings will only contain letters and spaces, with exactly 1 space between words, and no leading/trailing spaces. */
 
 function makeString(s){
-    let word ="";
+    let word;
     word = s[0];  
-    for (i = 1; i < s.length - 1; i += 1) {
-        s[i] == " " ? word = word + s[i+1] : console.log(s[i]);
+    for (let i = 1; i < s.length - 1; i += 1) {
+        s[i] == " " ? word = word + s[i+1]: word = word;
      }
-    return word;   
-        
-    
+    return word; 
   }
   
   console.log(makeString('Vobla Lada Ananas Double '));
