@@ -2,15 +2,14 @@
 
 // Дима биба
 
-function countSheeps(sheep) {
-  let y = 0;
+function countSheeps(sheeps) {
+  let beep_beep_i_am_sheep = 0;
 
-  for (let i = 0; i < sheep.length; i += 1) {
-    if (sheep[i] === true) {
-      y += 1;
-    }
+  for (sheep of sheeps) {
+    sheep == true ? beep_beep_i_am_sheep += 1: null ;
   }
-  return y;
+  
+  return beep_beep_i_am_sheep;
 }
 
 console.log(countSheeps([undefined, null, false, true, true, false, null, undefined]));

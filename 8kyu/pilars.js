@@ -2,10 +2,7 @@
 // Нужно найти расстояние между первым и последним столбом не учитывая их ширину ( первого и последнего).
 
 function pillars(numPill, dist, width) {
-  if (numPill === 1) {
-    return 0;
-  }
-  return (numPill * width) - (2 * width) + ((dist * numPill) - dist) * 100;
+return  numPill === 1 ? 0: (numPill * width) - (2 * width) + ((dist * numPill) - dist) * 100;
 }
-
+  
 console.log(pillars(11, 15, 30));
