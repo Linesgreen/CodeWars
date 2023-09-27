@@ -5,7 +5,7 @@
 function countSheeps(sheeps) {
   let beep_beep_i_am_sheep = 0;
 
-  for (sheep of sheeps) {
+  for (const sheep of sheeps) {
     sheep == true ? beep_beep_i_am_sheep += 1: null ;
   }
   

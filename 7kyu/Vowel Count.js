@@ -7,13 +7,13 @@ The input string will only consist of lower case letters and/or spaces. */
 
 
 function getCount(str) {
-    let x = 0;
-    for (let i=0; i < str.length; i++ ) {
+    let countVowels = 0;
+    for (let i = 0; i < str.length; i += 1 ) {
      if (str.charAt(i) == 'a'|| str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
-    x += 1;
+    countVowels += 1;
     }
     }
-    return x;
+    return countVowels;
   } 
 
   

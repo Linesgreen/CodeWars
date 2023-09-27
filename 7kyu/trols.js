@@ -2,7 +2,7 @@
 
 function disemvowel(str) {
   let new_str = '';
-  for (i = 0; i < str.length; i += 1) {
+  for (let i = 0; i < str.length; i += 1) {
     if (str[i] != 'A' && str[i] != 'a' && str[i] != 'E' && str[i] != 'e'
     && str[i] != 'I' && str[i] != 'i' && str[i] != 'O' && str[i] != 'o'
     && str[i] != 'U' && str[i] != 'u') {

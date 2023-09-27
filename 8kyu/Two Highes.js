@@ -17,14 +17,14 @@ function twoHighest(arr) {
     case 0: return [];
     case 1: return [arr[0]];
    }
-  for (i = 0; i<arr.length; i++) 
+  for (let i = 0; i < arr.length; i += 1) 
  {
 if ((y < arr[i]) && x != arr[i]) {
     y = arr[i];
-    console.log('y=' + y)
 }
  }
- return [x,y]; }
+ return [x,y];
+}
 
 
 

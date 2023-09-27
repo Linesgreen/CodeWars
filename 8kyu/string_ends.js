@@ -7,12 +7,12 @@
 // solution('abc', 'd') // returns false
 
 function solution(str, ending) {
-  x ='';
-  for (i =1; i <= ending.length; i++ ) {
+  let x;
+  for (let i =1; i <= ending.length; i += 1 ) {
     x = str[str.length-i] + x;
     console.log(x);
   }
-  return x == ending;
+  return x === ending;
 }
 
 console.log(solution('vlad', 'lad'));
