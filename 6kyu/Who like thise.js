@@ -20,20 +20,17 @@ function likes(names) {
     let firstName = names[0];
     let secondName = names[1];
     let thridName = names[2];
-    if (names.length == 0 ) {
-                return answer = "no one likes this";
-            }  else if(names.length == 1) {
-                answer = firstName  + " likes this"
-            } 
-            else if (names.length == 2) {
-                answer = firstName + ' and ' + secondName  + " like this"
-            } else if(names.length == 3) {
-                answer = firstName + ', ' + secondName  + " and " + thridName + " like this"}
-               else { answer = firstName + ', ' + secondName  + " and " + String(names.length - 2) + " others like this" }
-            return answer
-        }
+    console.log(names.length);
+    switch (names.length) {
+        case 0: return answer = "no one likes this"; 
+        case 1: return answer = firstName  + " likes this"; 
+        case 2: return answer = firstName + ' and ' + secondName  + " like this";
+        case 3: return firstName + ', ' + secondName  + " and " + thridName + " like this"; 
+        default: return answer = firstName + ', ' + secondName  + " and " + String(names.length - 2) + " others like this";
+    }   
+}
 
 
   
 
-console.log(likes(['Peter']));
+console.log(likes(['Peter','VLad','BIba']));
