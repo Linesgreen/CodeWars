@@ -13,19 +13,16 @@ Implement the function which takes an array containing the names of people
 
 Note: For 4 or more names, the number in "and 2 others" simply increases.*/
 
+
+
 function likes(names) {
     let answer = "";
-    let firstName = names[0];
-    let secondName = names[1];
-    let thridName = names[2];
-
     switch (names.length) {
         case 0: return answer = "no one likes this"; 
-        case 1: return answer = firstName  + " likes this"; 
-        case 2: return answer = firstName + ' and ' + secondName  + " like this";
-        case 3: return firstName + ', ' + secondName  + " and " + thridName + " like this"; 
-        default: return answer = firstName + ', ' + secondName  + " and " + String(names.length - 2) + " others like this";
+        case 1: return answer = names[0]  + " likes this"; 
+        case 2: return answer = names.join(" and ") + " like this";
+        case 3: return names[0] + ', ' + names[1]  + " and " + names[2] + " like this"; 
+        default: return answer = names.slice(0, 2).join(", ") + " and " + String(names.length - 2) + " others like this";
     }   
 }
-
-console.log(likes(['Peter','VLad','BIba']));
+console.log(likes(['Peter','VLad','BIba','Jhon']));
