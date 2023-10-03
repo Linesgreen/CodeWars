@@ -27,20 +27,24 @@ Examples
     Contains only some of the letters in "chris".
 -------------------------------------------------------------------- */
 
-function nameInStr(str, name){
-name = name.toLowerCase();
-str = str.toLowerCase();
-let name_new = Array.from(name);
+function nameInStr(str, name) {
+  name = name.toLowerCase();
+  str = str.toLowerCase();
+  let name_new = Array.from(name);
 
   for (const letter of name_new) {
-   
     if (str.indexOf(letter) !== -1) {
-        str = str.substring(str.indexOf(letter) + 1 , str.length)
-    } 
-    else { return false; }
+      str = str.substring(str.indexOf(letter) + 1, str.length);
+    } else {
+      return false;
     }
+  }
   return true;
 }
 
-console.log(nameInStr(' fe i ee  nqeayioe set   r dndomr mwmi lgnjeg jeapa iyyfkyyhtabtyaatmb  hnyhzm',
-'Tim'));
+console.log(
+  nameInStr(
+    " fe i ee  nqeayioe set   r dndomr mwmi lgnjeg jeapa iyyfkyyhtabtyaatmb  hnyhzm",
+    "Tim"
+  )
+);
