@@ -8,7 +8,7 @@
     realNumber.push(number[i]*1);
   } 
   number = realNumber.join(','); 
-    return Math.max.apply(null, realNumber) + " " +  Math.min.apply(null, realNumber) ;
+    return `${Math.max.apply(null, realNumber)} ${Math.min.apply(null, realNumber)}` ;
   } 
 
 

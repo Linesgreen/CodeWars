@@ -21,8 +21,10 @@ function likes(names) {
         case 0: return answer = "no one likes this"; 
         case 1: return answer = names[0]  + " likes this"; 
         case 2: return answer = names.join(" and ") + " like this";
-        case 3: return names[0] + ', ' + names[1]  + " and " + names[2] + " like this"; 
-        default: return answer = names.slice(0, 2).join(", ") + " and " + String(names.length - 2) + " others like this";
+        case 3: return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+        default: return answer = `${names.slice(0, 2).join(", ")} and ${String(names.length - 2)} others like this` ;
+        
+        
     }   
 }
 console.log(likes(['Peter','VLad','BIba','Jhon']));
