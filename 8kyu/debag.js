@@ -18,4 +18,7 @@ function checkAlive(health) {
   return health > 0;
 }
 
-console.log(checkAlive(9));
+let checkAlive_1 = (a) => a > 0; // переделал на стрелочную функцию
+
+console.log(checkAlive_1(9));
+

@@ -12,25 +12,19 @@ On 12-hours clock, there is no 0 hour, and time just after midnight is denoted a
 On 24-hour clock, this translates to 0015. */
 
 function to24hourtime(hour, minute, period) {
-    let answer = '';
-    minute = minute.toString();
-    minute <= 9 ? minute = '0' + minute : minute = minute;
-    if ( period === 'pm' ) { 
-        hour == 12 ? answer = hour +  minute  : answer = hour + 12 + minute;
-    
-    }
-    else { 
-        hour <= 9 ? hour = '0' + hour  : hour = hour;
-        
-        hour == 12 ? hour = '00' : hour = hour;
-        
-        answer = hour + minute;
+  let answer = "";
+  minute = minute.toString();
+  minute <= 9 ? (minute = "0" + minute) : (minute = minute);
+  if (period === "pm") {
+    hour == 12 ? (answer = hour + minute) : (answer = hour + 12 + minute);
+  } else {
+    hour <= 9 ? (hour = "0" + hour) : (hour = hour);
 
-    }
-    return answer;
+    hour == 12 ? (hour = "00") : (hour = hour);
+
+    answer = hour + minute;
+  }
+  return answer;
 }
 
-
-
-console.log(to24hourtime(9, 45,'pm'));
-  
+console.log(to24hourtime(9, 45, "pm"));

@@ -12,3 +12,5 @@ function splitTheBill(x) {
     } 
     return x;
 }
+
+
