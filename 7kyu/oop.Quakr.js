@@ -35,7 +35,6 @@ class Quark {
     [this.color, nameQuark.color] = [nameQuark.color, this.color];
   }
 }
-
 let q1 = new Quark("red", "up");
 let q2 = new Quark("blue", "up");
 
