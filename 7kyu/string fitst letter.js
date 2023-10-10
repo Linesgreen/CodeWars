@@ -15,3 +15,4 @@ function makeString(s){
   }
   
   console.log(makeString('Vobla Lada Ananas Double I Sonick Love Alpaka Vupsen" '));
+  ///// блаблабла
