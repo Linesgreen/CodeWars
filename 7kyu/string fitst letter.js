@@ -16,3 +16,12 @@ function makeString(s){
   
   console.log(makeString('Vobla Lada Ananas Double I Sonick Love Alpaka Vupsen" '));
   ///// блаблабла
+
+  function makeString1(s) {
+   words = /\w+/gi
+   let wordMas = s.match(words);
+   return wordMas.reduce ((word, wordInArray) => word + wordInArray.charAt(0), "");
+
+  }
+
+  console.log(makeString1("Vobla Lada Ananas Double I Sonick Love Alpaka Vupsen"))
