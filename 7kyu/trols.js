@@ -11,4 +11,13 @@ function disemvowel(str) {
   }
   return new_str;
 } 
+
+
 console.log(disemvowel('Vlad'));
+
+function disemvowel1(str) {
+  let noVovels = new RegExp('[bcdfghjklmnpqrstvwxyz]', 'ig')
+  return str.match(noVovels).join('');
+}
+
+console.log(disemvowel1('Vlad'));
