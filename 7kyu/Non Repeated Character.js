@@ -32,3 +32,12 @@ function firstNonRepeated(s) {
 
 
   console.log(firstNonRepeated('vvlladd'));
+
+  function firstNonRepeated1(s) {
+    let reapeatRegEx = /(\w)\1/g;
+    let  answer = s.match(reapeatRegEx)
+    answer.forEach((letters) => s = s.replace(letters, ""));
+    return s;
+    
+  }
+  console.log(firstNonRepeated1("vvlladd"))
