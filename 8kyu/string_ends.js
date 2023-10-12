@@ -10,9 +10,17 @@ function solution(str, ending) {
   let x;
   for (let i =1; i <= ending.length; i += 1 ) {
     x = str[str.length-i] + x;
-    console.log(x);
   }
   return x === ending;
 }
 
-console.log(solution('vlad', 'lad'));
+//console.log(solution('vlad', 'lad'));
+
+
+function solution2(str, ending) {
+ let searchRegex = new RegExp(ending + '$');
+ return searchRegex.test(str);
+}
+
+console.log(solution2("vlad", "lad"));
+
