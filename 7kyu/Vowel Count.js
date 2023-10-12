@@ -16,5 +16,11 @@ function getCount(str) {
     return countVowels;
   } 
 
-  
 console.log(getCount('1234aaaee'));
+
+function getCount1(str) {
+  vovels = new RegExp('[aeio]','ig')
+  return str.match(vovels).length;
+}
+
+console.log(getCount1("1234aaaee"));
