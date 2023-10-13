@@ -18,14 +18,9 @@ Examples (input --> output):
 "Skippy" --> "##ippy"
 "Nananananananananananananananana Batman!" --> "####################################man!" */
 
-
-
-
 function maskify(cc) {
 hidenChar = "#";
 return cc.length < 5 ? cc : hidenChar.repeat(cc.length - 4) + cc.slice(-4);
 }
-
-
 
 console.log(maskify("1"));
