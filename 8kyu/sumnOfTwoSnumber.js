@@ -11,6 +11,5 @@ function sumTwoSmallestNumbers(numbers) {
     let [num1, num2, ...num] = numbers.sort((a,b) => (a - b));
     return num1 + num2;
   }
-
-
+  
   console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
