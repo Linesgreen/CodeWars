@@ -3,4 +3,4 @@ function buba(string) {
 };
 
 
-console.log(buba("When I Die. Then You Will Realiz'e."))
+console.log(buba("When I Die. Then You Will Realiz'e."));
