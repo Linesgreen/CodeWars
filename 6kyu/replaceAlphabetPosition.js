@@ -4,4 +4,4 @@ function alphabetPosition(text) {
   }
 
   
-  console.log(alphabetPosition("#"));
+  console.log(alphabetPosition("man"));
