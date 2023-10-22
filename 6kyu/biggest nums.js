@@ -13,6 +13,7 @@ function swap(arr, a, b) {
   arr[b] = temp; 
 } 
 
+
 function defCompare (a, b) { 
 return a.toString() + b.toString() > b.toString() + a.toString() ? 1 : -1; 
 }
