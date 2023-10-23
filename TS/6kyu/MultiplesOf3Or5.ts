@@ -9,7 +9,7 @@ Additionally, if the number is negative, return 0.
 Note: If the number is a multiple of both 3 and 5, only count it once.
 */
 export class Challenge {
-    solution(num:number) :number {
+    public solution(num:number) :number {
         let answer :number = 0
     for (let i :number = 1; i < num; i += 1) {
         i % 3 && i % 5 ? answer += 0 : answer += i;
