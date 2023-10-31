@@ -8,32 +8,32 @@ Adam and Eve were the first Humans to wander the Earth.
     of the class Woman. Both objects have to be subclasses of Human.
     Your job is to implement the Human, Man and Woman classes.
  */
-class God{
-    static create(){
-        return [new Man("Adam"), new Woman("Eve")]
-    }
+class God {
+  static create() {
+    return [new Man('Adam'), new Woman('Eve')];
+  }
 }
 
 class Human {
-    name : string;
-    constructor(name : string) {
-        this.name = name;
-    }
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
 }
 
-class Man extends Human{
-    constructor(name : string) {
-        super(name);
-    }
+class Man extends Human {
+  constructor(name: string) {
+    super(name);
+  }
 }
 
- class Woman extends Human{
-     constructor(name : string) {
-         super(name);
-     }
- }
+class Woman extends Human {
+  constructor(name: string) {
+    super(name);
+  }
+}
 
- let Andrew = new Woman("Andrew")
+let Andrew = new Woman('Andrew');
 
- let humans = God.create();
-console.log(humans)
+let humans = God.create();
+console.log(humans);

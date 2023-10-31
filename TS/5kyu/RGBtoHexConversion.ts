@@ -14,8 +14,8 @@ Examples (input --> output):
   148, 0, 211   --> "9400D3"
 
 */
-function rgb(r: number, g: number, b: number): any {
-   let closedValidNumber = function (number : number) : number {
+function rgb(r: number, g: number, b: number): string {
+   const closedValidNumber = function (number : number) : number {
        if (number < 0) {
           return  0
        } else if (number > 255) {
@@ -23,9 +23,9 @@ function rgb(r: number, g: number, b: number): any {
        } else return number
     }
 
-   let rHex:string = (closedValidNumber(r).toString(16)).padStart(2,'0');
-   let gHex:string = (closedValidNumber(g).toString(16)).padStart(2,'0');
-   let bHex:string = (closedValidNumber(b).toString(16)).padStart(2,'0');
+   const rHex:string = (closedValidNumber(r).toString(16)).padStart(2,'0');
+   const gHex:string = (closedValidNumber(g).toString(16)).padStart(2,'0');
+   const bHex:string = (closedValidNumber(b).toString(16)).padStart(2,'0');
    return `${rHex}${gHex}${bHex}`.toUpperCase()
 }
 

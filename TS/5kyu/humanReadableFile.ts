@@ -10,7 +10,7 @@ The maximum time never exceeds 359999 (99:59:59)
 You can find some examples in the test fixtures.
 
  */
-function humanReadable(seconds:number):any {
+function humanReadable(seconds:number):string {
     let hh : number|string = Math.floor(seconds / 3600);
     let mm : number|string = Math.floor((seconds / 3600 - hh) * 60)
     let ss : number|string = Math.round((((seconds / 3600 - hh) * 60) - mm) * 60)
